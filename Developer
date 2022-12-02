@@ -1,0 +1,18 @@
+CREATE [OR REPLACE ] PROCEDURE procedure_name (parameter_list)     
+IS/AS
+//variables
+BEGIN                                      //SYNTAX
+END;
+
+declare
+b number;
+procedure squarenum(x in out number)
+is
+begin 
+x:=x*x;
+end;
+begin
+b:=5;
+squarenum(b);
+dbms_output.put_line('Square is ' || b);
+end;
